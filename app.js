@@ -9,23 +9,23 @@ const getBaseUrl = () => {
 const blogs = [
   
   {
-    title: 'Simple KV Store within LLM Custom Instructions',
+    title: 'My LLM Custom Instructions',
     date: '2025-04-15',
     url: '/blog/llm-instrs',
     path: 'blogs/llm-instrs.md'
   }, 
-  {
-    title: 'An Internet for AIs',
-    date: '2025-04-15',
-    url: '/blog/an-internet-for-ais',
-    path: 'blogs/an-internet-for-ais.md'
-  }, 
-  {
-    title: 'Solving the Halting Problem',
-    date: '2024-09-11',
-    url: '/blog/halting-problem',
-    path: 'blogs/halting-problem.md'
-  },
+  // {
+  //   title: 'An Internet for AIs',
+  //   date: '2025-04-15',
+  //   url: '/blog/an-internet-for-ais',
+  //   path: 'blogs/an-internet-for-ais.md'
+  // }, 
+  // {
+  //   title: 'Solving the Halting Problem',
+  //   date: '2024-09-11',
+  //   url: '/blog/halting-problem',
+  //   path: 'blogs/halting-problem.md'
+  // },
 ]; 
 
 const personalLinks = [
