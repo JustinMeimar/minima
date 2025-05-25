@@ -7,19 +7,18 @@ const getBaseUrl = () => {
 };
 
 const blogs = [
-  
+  {
+    title: 'Productivity Hacks',
+    date: '2025-05-25',
+    url: '/blog/productivity-hacks',
+    path: 'blogs/productivity-hacks.md'
+  }, 
   {
     title: 'My LLM Custom Instructions',
     date: '2025-04-15',
     url: '/blog/llm-instrs',
     path: 'blogs/llm-instrs.md'
-  }, 
-  // {
-  //   title: 'An Internet for AIs',
-  //   date: '2025-04-15',
-  //   url: '/blog/an-internet-for-ais',
-  //   path: 'blogs/an-internet-for-ais.md'
-  // }, 
+  },  
   // {
   //   title: 'Solving the Halting Problem',
   //   date: '2024-09-11',
