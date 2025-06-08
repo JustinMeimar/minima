@@ -7,12 +7,12 @@ const getBaseUrl = () => {
 };
 
 const blogs = [
-  {
-    title: 'Productivity Hacks',
-    date: '2025-05-25',
-    url: '/blog/productivity-hacks',
-    path: 'blogs/productivity-hacks.md'
-  }, 
+  // {
+  //   title: 'Productivity Hacks',
+  //   date: '2025-05-25',
+  //   url: '/blog/productivity-hacks',
+  //   path: 'blogs/productivity-hacks.md'
+  // }, 
   {
     title: 'My LLM Custom Instructions',
     date: '2025-04-15',
