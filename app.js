@@ -46,7 +46,7 @@ const personalLinks = [
   }
 ];
 
-const projects = [
+const projects = [ 
   {
     title: 'Dragon-Runner',
     date: '2024-09-20',
