@@ -1,30 +1,10 @@
-const getBaseUrl = () => {
-  if (window.location.hostname === 'justinmeimar.github.io') {
-    return '/minima/';
-  } else {
-    return '/';
-  }
-};
-
 const blogs = [
-  // {
-  //   title: 'Productivity Hacks',
-  //   date: '2025-05-25',
-  //   url: '/blog/productivity-hacks',
-  //   path: 'blogs/productivity-hacks.md'
-  // }, 
   {
     title: 'My LLM Custom Instructions',
     date: '2025-04-15',
     url: '/blog/llm-instrs',
-    path: 'blogs/llm-instrs.md'
-  },  
-  // {
-  //   title: 'Solving the Halting Problem',
-  //   date: '2024-09-11',
-  //   url: '/blog/halting-problem',
-  //   path: 'blogs/halting-problem.md'
-  // },
+    path: './blogs/llm-instrs.md'
+  }, 
 ]; 
 
 const personalLinks = [
@@ -42,7 +22,7 @@ const personalLinks = [
   },
   {
     name: 'resume',
-    link: getBaseUrl() + 'static/resume.pdf',
+    link: './static/resume.pdf',
   }
 ];
 
@@ -52,37 +32,36 @@ const projects = [
     date: '2024-09-20',
     desc: 'V2 of a custom toolchain and test runner for my universitys compiler class',
     link: 'https://github.com/JustinMeimar/Dragon-Runner',
-    photo: getBaseUrl() + 'static/projects/dragon.png'
+    photo: './static/projects/dragon.png'
   },
   {
     title: '415 Compiler-Explorer',
     date: '2024-08-01',
     desc: 'A fork of compiler-explorer for 415 assignments',
     link: 'https://www.cmput415compilerexplorer.com/',
-    photo: getBaseUrl() + 'static/projects/ce.png'
+    photo: './static/projects/ce.png'
   },
   {
     title: 'Algo Trees',
     date: '2024-01-05',
     desc: 'Procedural tree generation from recurrence relations',
     link: 'https://justinmeimar.github.io/algo-trees/',
-    photo: getBaseUrl() + 'static/projects/tree.png'
+    photo: './static/projects/tree.png'
   },
   {
     title: 'Mini Regex Engine',
     date: '2023-03-01',
     desc: 'A mini regex engine built from NFA closure properties',
     link: 'https://github.com/JustinMeimar/nfa-regex',
-    photo: getBaseUrl() + 'static/projects/nfa.png'
+    photo: './static/projects/nfa.png'
   }
 ];
 
 
 function app() {
-  
+     
   return {
         currentPath: '/',
-        baseUrl: '/minima/',
         links: [
             { url: '/', text: 'Home' },
             { url: '/blog', text: 'Blog' },
@@ -101,7 +80,6 @@ function app() {
             };
             window.addEventListener('hashchange', updatePath);
             updatePath();
-            this.baseUrl = getBaseUrl();
         },
         getBlogByUrl(url) {
             return this.blogs.find(blog => blog.url === url);
