@@ -1,10 +1,10 @@
 const blogs = [
-  {
-    title: 'My LLM Custom Instructions',
-    date: '2025-04-15',
-    url: '/blog/llm-instrs',
-    path: './blogs/llm-instrs.md'
-  }, 
+  // {
+  //   title: 'My LLM Custom Instructions',
+  //   date: '2025-04-15',
+  //   url: '/blog/llm-instrs',
+  //   path: './blogs/llm-instrs.md'
+  // }, 
 ]; 
 
 const personalLinks = [
@@ -35,10 +35,10 @@ const projects = [
     photo: './static/projects/dragon.png'
   },
   {
-    title: '415 Compiler-Explorer',
+    title: 'Gazbolt',
     date: '2024-08-01',
-    desc: 'A fork of compiler-explorer for 415 assignments',
-    link: 'https://www.cmput415compilerexplorer.com/',
+    desc: 'A compiler-explorer for 415 assignments',
+    link: 'https://github.com/JustinMeimar/gazbolt',
     photo: './static/projects/ce.png'
   },
   {
