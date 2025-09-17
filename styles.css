@@ -51,9 +51,10 @@
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -61,7 +62,7 @@ html, body {
 
 
 #content-wrapper {
-    flex: 1 0 auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -70,10 +71,41 @@ html, body {
     padding: 0 20px;
     box-sizing: border-box;
     background-color: var(--bg-primary);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 main {
-    flex: 1 0 auto;
+    flex: 1;
+    padding-bottom: 2rem;
+    /* Ensure content has some space at the bottom */
+}
+
+/* Custom scrollbar styling */
+#content-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+#content-wrapper::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+#content-wrapper::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#content-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--text-primary);
+}
+
+/* Firefox scrollbar styling */
+#content-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-secondary) var(--bg-secondary);
 }
 
 footer {
