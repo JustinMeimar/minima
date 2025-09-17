@@ -167,21 +167,21 @@ nav a.active::after {
 
 .theme-toggle {
     background: none;
-    border: 2px solid var(--text-primary);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    border: none;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
     color: var(--text-primary);
+    padding: 4px;
 }
 
 .theme-toggle:hover {
-    background-color: var(--bg-hover);
-    transform: scale(1.1);
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .theme-toggle-icon {
