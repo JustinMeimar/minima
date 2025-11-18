@@ -1,10 +1,10 @@
 const blogs = [
-  // {
-  //   title: 'My LLM Custom Instructions',
-  //   date: '2025-04-15',
-  //   url: '/blog/llm-instrs',
-  //   path: './blogs/llm-instrs.md'
-  // }, 
+  {
+    title: 'Lazy Secrets with Nix',
+    date: '2025-11-17',
+    url: '/blog/lazy_secrets_nix',
+    path: './blogs/lazy_secrets_nix.md'
+  } 
 ]; 
 
 const personalLinks = [
